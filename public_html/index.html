@@ -6,11 +6,38 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>TIC TAC TOE</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="tictac.css" rel="stylesheet">
+        <script type="text/javascript" src="tictac.js"></script>
     </head>
     <body>
-        <div>TODO write content</div>
+        <div class="container"> 
+            <h1>Tic Tac Toe</h1>
+
+            <div id="gameBoard" class="gameboard">
+                
+                    <div class="Row">
+                        <div  id="0" class="square Column hvr-back-pulse "></div>
+                        <div  id="1" class="square Column hvr-back-pulse"></div>
+                        <div  id="2" class="square Column hvr-back-pulse"></div>
+                    </div>
+                    <div class="Row">
+                        <div  id="3" class="square Column hvr-back-pulse"></div>
+                        <div  id="4" class="square Column hvr-back-pulse"></div>
+                        <div  id="5" class="square Column hvr-back-pulse"></div>
+                    </div>
+                    <div class="Row">
+                        <div  id="6" class="square Column hvr-back-pulse"></div>
+                        <div  id="7" class="square Column hvr-back-pulse"></div>
+                        <div  id="8" class="square Column hvr-back-pulse"></div>
+                    </div>
+                <div id="winNotify" class="win-notify"> </div>
+                
+            </div>
+
+
+        </div>
     </body>
 </html>

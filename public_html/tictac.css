@@ -1,0 +1,145 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 13, 2017, 2:00:08 PM
+    Author     : pancham.bhagwat
+*/
+
+.container{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    border: 2px solid #cccccc;
+    background-color:  whitesmoke;
+    position: relative;
+
+
+}
+.container h1{
+    text-align: center;
+    font-family:   monospace;
+    color:  #000099;
+}
+.text-vertical-center{
+    vertical-align: middle;
+}
+
+.gameboard{
+    width: 306px;
+    height: 306px;
+    margin: auto;
+    box-shadow: 10px 10px 5px #888888;
+    background-color:   darkslategray;
+    position: absolute;
+    top: 80px;
+    left:  80px;
+
+}
+.win-notify{
+    width: 306px;
+    height: 306px;
+    margin: auto;
+    box-shadow: 10px 10px 5px #888888;
+    background-color:  #e9eecf;
+    color:   #0aee11;
+    position: absolute;
+    z-index: -10;
+    top: 0px;
+    left:  0px;
+    opacity: 0.8;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 300px; 
+    font-size:30pt;
+    font-weight:bold;
+    font-style:italic;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    border: 1px solid  #00cccc;
+    background-color:   darkslategray;
+    color:   #ffff66;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px; 
+    font-size:30pt;
+    font-weight:bold;
+    font-style:italic;
+}
+.square-win{
+    width: 100px;
+    height: 100px;
+    border: 1px solid  #00cccc;
+    background-color:   darkslategray;
+    color:   #ffff66;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px; 
+    font-size:30pt;
+    font-weight:bold;
+    font-style:italic;
+    opacity: 0.2;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+
+.square h2{
+    margin-top: 50%;
+}
+.Row
+{
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 0px; /*Optional*/
+}
+.Column
+{
+    display: table-cell;
+
+}
+
+/* Back Pulse */
+@-webkit-keyframes hvr-back-pulse {
+    50% {
+        background-color: rgba(32, 152, 209, 0.75);
+    }
+}
+@keyframes hvr-back-pulse {
+    50% {
+        background-color: rgba(32, 152, 209, 0.75);
+    }
+}
+.hvr-back-pulse {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    overflow: hidden;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+.hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
+    -webkit-animation-name: hvr-back-pulse;
+    animation-name: hvr-back-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-color: darkslategray;
+    background-color: darkslategray;
+    color: white;
+}
+/* Back Pulse Ends */
