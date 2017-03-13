@@ -1,12 +1,19 @@
+/*
+Tic-tac-toe (also known as noughts and crosses or Xs and Os)
+is a paper-and-pencil game for two players, X and O, who take
+turns marking the spaces in a 3×3 grid. The player who succeeds 
+in placing three of their marks in a horizontal, vertical, 
+or diagonal row wins the game.
+*/
 /* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+    Created on : Feb 13, 2017, 2:00:08 PM
+    Author     : Trupti Mhaisdhune
+*/
 
 var currentUser = 'X';
 var boardArray = new Array(9);
 document.addEventListener('click', function (e) {
+    document.getElementById('controlNewButton').style.display = 'none';
     var clicked_target = e.target.id;
     var printmove = document.getElementById(clicked_target);
     var clickedIndex = parseInt(clicked_target);
@@ -82,6 +89,8 @@ function showWin(winner) {
     div.innerHTML = winner + ' is winner';
     div.style.zIndex = "10";
     document.getElementById('gameBoard').style.pointerEvents = 'none';
+    document.getElementById('controlNewButton').style.pointerEvents = 'auto';
+    document.getElementById('controlNewButton').style.display = 'block';
 }
 function showGameOver() {
     var div = document.getElementById('winNotify');
@@ -89,4 +98,7 @@ function showGameOver() {
     div.style.zIndex = "10";
     div.style.color = "red";
     document.getElementById('gameBoard').style.pointerEvents = 'none';
+}
+function startNewGame() {
+    location.reload();
 }

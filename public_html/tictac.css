@@ -1,11 +1,13 @@
 /*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+Tic-tac-toe (also known as noughts and crosses or Xs and Os)
+is a paper-and-pencil game for two players, X and O, who take
+turns marking the spaces in a 3×3 grid. The player who succeeds 
+in placing three of their marks in a horizontal, vertical, 
+or diagonal row wins the game.
 */
 /* 
     Created on : Feb 13, 2017, 2:00:08 PM
-    Author     : pancham.bhagwat
+    Author     : Trupti Mhaisdhune
 */
 
 .container{
@@ -71,6 +73,7 @@ and open the template in the editor.
     font-weight:bold;
     font-style:italic;
 }
+/*
 .square-win{
     width: 100px;
     height: 100px;
@@ -84,8 +87,8 @@ and open the template in the editor.
     font-weight:bold;
     font-style:italic;
     opacity: 0.2;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
-}
+    filter: alpha(opacity=50); /* For IE8 and earlier 
+} */
 
 
 .square h2{
@@ -103,6 +106,37 @@ and open the template in the editor.
     display: table-cell;
 
 }
+
+.control-pannel{
+    width: 306px;
+    height: 50px;
+    margin: auto;
+    background-color:  whitesmoke;
+    position: absolute;
+    margin-top: 20px;
+    text-align: center;
+
+}
+.btn-new-game{
+    color:  floralwhite;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    margin-top: 5px;  
+}
+.btn-quit-game{
+    color:  floralwhite;
+    background-color:  orangered;
+    border-color: orangered;
+    margin-top: 5px;  
+    margin-left: auto;
+}
+.btn-quit-game:hover{
+
+    background-color:   #ac2925;
+    border-color: #ac2925;
+
+}
+
 
 /* Back Pulse */
 @-webkit-keyframes hvr-back-pulse {
@@ -143,3 +177,44 @@ and open the template in the editor.
     color: white;
 }
 /* Back Pulse Ends */
+
+
+/* Buzz */
+@-webkit-keyframes hvr-buzz {
+    50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+}
+@keyframes hvr-buzz {
+    50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+}
+.hvr-buzz {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+}
+.hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
+    -webkit-animation-name: hvr-buzz;
+    animation-name: hvr-buzz;
+    -webkit-animation-duration: 0.30s;
+    animation-duration: 0.30s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+/* Buzz  Ends*/
