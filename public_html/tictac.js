@@ -98,6 +98,8 @@ function showGameOver() {
     div.style.zIndex = "10";
     div.style.color = "red";
     document.getElementById('gameBoard').style.pointerEvents = 'none';
+    document.getElementById('controlNewButton').style.pointerEvents = 'auto';
+    document.getElementById('controlNewButton').style.display = 'block';
 }
 function startNewGame() {
     location.reload();
